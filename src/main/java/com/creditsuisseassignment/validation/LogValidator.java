@@ -30,7 +30,7 @@ public class LogValidator {
         LOGGER.info("Check the command line arguments");
 
         //Check if empty
-        if(args!=null) {
+        if(args==null) {
             LOGGER.error("Null or empty arguments. Please add 1 argument!", args);
             return false;
         }
